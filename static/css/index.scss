@@ -1,0 +1,84 @@
+// @media screen and (max-width:480px) {
+
+
+body{
+}
+
+#page{
+    // ===iphone12pro の画面サイズ===
+    width: 390px;
+    height: 544px;
+    // =============================
+    margin: 0 auto;
+    #anker{
+        text-align: center;
+        #p{
+            display: inline-block;
+            padding: 20px 40px;
+            margin: 1.8rem auto 0 auto;
+            text-decoration: none;
+            background-color: rgba($color: #9f9f9f, $alpha: 0.5);
+            border-bottom: solid 4px #606777;
+            border-radius: 2rem;
+            font-size: 32px;
+            // width: 50%;
+            // margin: 2rem auto 0 auto;
+            // padding: 1rem;
+        }
+        #p:hover{
+            transition: all 0.3s ease;
+            margin: 1.8rem auto 0 auto;
+            background-color: rgba($color: #e0dfdf, $alpha: 0.7);
+        }
+        #p:active{
+            transform: translateY(4px);
+            border-bottom: none;
+        }
+    }
+}
+
+
+#img1{
+    width: 400px;
+    height: auto;
+}
+#img2{
+    width: 300px;
+    height: auto;
+    /* アニメーションの名前 */
+    animation-name:UpDown;
+    /* アニメーションの１回分の長さ */
+    animation-duration: 1.5s;
+    /* アニメーションの回数 */
+    animation-iteration-count: infinite;
+    /* アニメーションの進行具合 */
+    animation-timing-function: ease-in-out;
+    /* アニメーション再生の向き */
+    animation-direction: alternate;
+}
+        /* アニメーションの設定 */
+@keyframes UpDown{
+    /* 開始地点 */
+    0%{
+    /* Y軸0px */
+    transform: translateY(0);
+    }
+    /* 終了地点 */
+    100%{
+    /* Y軸50px */
+    transform: translateY(20px);
+    }
+}
+#img3{
+    margin-top: 2em;
+    width: 350px;
+
+}
+p{
+    text-align: center;
+}
+#p2{
+    padding-bottom: 2em;
+}
+
+// }

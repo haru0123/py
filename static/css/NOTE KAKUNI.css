@@ -1,0 +1,133 @@
+
+body{
+    max-height: 884px;
+}
+
+img{
+    width: 200px;
+    height: auto;
+  
+    
+}
+
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: rgb(202, 202, 202);
+
+}
+
+
+#mainimage{
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: center;
+    gap:30%;
+    
+    
+}
+
+
+
+#imagebox{
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: center;
+    gap:10%
+
+}
+
+#image2{
+    padding-top: 150px;
+}
+
+
+@media screen and (max-width:480px) {
+
+
+    img{
+        width: 100px;
+        height: auto;
+    }
+    
+    h1{
+        font-size: 25px;
+        font-weight: bold;
+        padding-top: 10px;
+        color: rgb(202, 202, 202);
+    }
+    
+    
+    #mainimage{
+        display: flex;
+        flex: 0 1 auto;
+        justify-content: center;
+        gap:30%;
+        
+        
+    }
+    
+    
+
+    #imagebox{
+        text-align: center;
+        display: flex;
+        flex: 0 1 auto;
+        justify-content: center;
+        gap:5%;
+        padding-bottom: 20px;
+        padding-left: 50px;
+    
+    }
+    
+    #image2{
+        padding-top: 20px;
+    }
+
+
+
+    /* タグ作成 */
+
+    article{
+        padding-top: 10px;
+    }
+   
+
+    #genre{
+        text-align: center;
+        display: flex;
+        flex: 0 1 auto;
+        justify-content: center;
+        gap: 10%;
+        padding-bottom: 20px;
+        
+    }
+    
+    p{
+        font-size: 25px;
+        color: #fff;
+        padding: 1rem;
+        padding-right: 50px;
+    }
+    
+
+    #anker  {
+        font-size: 25px;
+        text-align: center;
+        border-radius: 2em;
+        padding: 1rem 3rem;
+        background-color: rgba(159, 159, 159, 0.5);
+        color: #fff;
+        font-weight: bold;
+    }
+
+
+}
+
+
+
+
+

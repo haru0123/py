@@ -1,0 +1,120 @@
+#img1{
+    width: 100px;
+    height: auto;
+    /* アニメーションの名前 */
+    animation-name:UpDown;
+    /* アニメーションの１回分の長さ */
+    animation-duration: 1.5s;
+    /* アニメーションの回数 */
+    animation-iteration-count: infinite;
+    /* アニメーションの進行具合 */
+    animation-timing-function: ease-in-out;
+    /* アニメーション再生の向き */
+    animation-direction: alternate;
+}
+        /* アニメーションの設定 */
+@keyframes UpDown{
+    /* 開始地点 */
+    0%{
+    /* Y軸0px */
+    transform: translateY(0);
+    }
+    /* 終了地点 */
+    100%{
+    /* Y軸50px */
+    transform: translateY(20px);
+    }
+}
+#div1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    padding-top: 10px;
+}
+#div2{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: left;
+}
+#p1{
+    padding-left: 20px;
+}
+#p2{
+    text-align: center;
+}
+#p3{
+    margin-top: -35px;
+}
+#img2{
+    width: 350px;
+    height: 230px;
+    margin-top: 10px;
+}
+#img3{
+    width: 200px;
+    height: auto;
+}
+#form1{
+    width: 77%;
+    margin: 40px auto;
+}
+#in1{
+    border: 1px solid #ccc;
+    background-color: #eee;
+    width: 300px;
+    height: 60px;
+    padding-left: 6px;
+}
+#in2{
+    background-color: red;
+    width: 150px;
+    text-align: center;
+    height: 25px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+#in3{
+    background-color: green;
+    width: 150px;
+    text-align: center;
+    height: 25px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+#div3{
+    background-color: white;
+    margin: 30px auto;
+    padding: 20px;
+    overflow-y: scroll;
+    height: 30vh;
+    width: 90vw;
+    text-align: left;
+    border-radius: 20px;
+}
+#p6{
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.TextTyping {
+  letter-spacing: .1em;
+    word-break : break-all;
+}
+
+/*========= タイピング ===============*/
+
+.TextTyping span {
+  display: none;
+}
+
+/*文字列後ろの線の設定*/
+.TextTyping::after {
+  content: "|";
+  animation: typinganime .8s ease infinite;
+}
+
+@keyframes typinganime{
+  from{opacity:0}
+  to{opacity:1}
+}

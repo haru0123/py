@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #15154F;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #202090;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#img3{
+    width: 200px;
+    height: auto;
+    /* position: absolute; */
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+h1 span {
+    color: #FF4081;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#p1 {
+    margin: 0;
+}
+
+#img1 {
+    width: 150px;
+    height: auto;
+}
+
+.level-container {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.level-label {
+    font-size: 14px;
+}
+
+.level {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #4040a0;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%;
+    height: 20px;
+    margin: 20px auto 10px auto;
+    box-shadow: 0 0 10px #FF4081;
+}
+
+.progress {
+    background-color: #FF4081;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.status-container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.status-label {
+    font-size: 14px;
+}
+
+.exp {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.message-box {
+    background-color: #FFF;
+    color: #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    left: 0;
+}

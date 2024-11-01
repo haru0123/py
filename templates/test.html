@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メイン</title>
+    <link rel="stylesheet" href="../static/css/destyle.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/test.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Study<span>∞</span>Buddy</h1>
+            <div class="icons">
+                <img src="../static/css/images/note11.png" alt="Notifications" class="icon" id="notification-icon">
+                <img src="../static/css/images/set.png" alt="Settings" class="icon" id="settings-icon">
+            </div>
+        </header>
+        <main>
+            <div class="character-container">
+                <p id="p1"><img src="../static/css/images/image%20103.png" alt="Character" id="img1"></p>
+                <div class="level-container">
+                    <span class="level-label">レベル:</span>
+                    <span class="level" id="level">1</span>
+                </div>
+                <div class="progress-bar" id="progress-bar">
+                    <div class="progress" id="progress" style="width: 0%;"></div>
+                </div>
+                <div class="status-container">
+                    <span class="status-label">経験値:</span>
+                    <span class="exp" id="exp"></span>
+                </div>
+            </div>
+            <div class="message-box">
+                <p>今日も会えて嬉しい！<br>いつも頑張ってるね！！</p>
+            </div>
+            <button id="solve-problem">問題を解く</button>
+        </main>
+        <footer>
+            <form action="/NOTE" method="get">
+                <input type="image" src="../static/css/images/note.png" alt="Note">
+            </form>
+            <form action="/QUSTION INPUT" method="get">
+                <input type="image" src="../static/css/images/teach.png" alt="Teach">
+            </form>
+            <form action="/main" method="get">
+                <input type="image" src="../static/css/images/home.png" alt="Home">
+            </form>
+            <form action="/study" method="get">
+                <input type="image" src="../static/css/images/study.png" alt="Study">
+            </form>
+            <form action="/" method="get">
+                <input type="image" src="../static/css/images/character.png" alt="Character">
+            </form>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>

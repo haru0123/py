@@ -1,0 +1,231 @@
+#img1{
+    width: 180px;
+    height: auto;
+}
+#img2{
+    width: 150px;
+    height: auto;
+    /* アニメーションの名前 */
+    animation-name:UpDown;
+    /* アニメーションの１回分の長さ */
+    animation-duration: 1.5s;
+    /* アニメーションの回数 */
+    animation-iteration-count: infinite;
+    /* アニメーションの進行具合 */
+    animation-timing-function: ease-in-out;
+    /* アニメーション再生の向き */
+    animation-direction: alternate;
+}
+/* アニメーションの設定 */
+@keyframes UpDown{
+    /* 開始地点 */
+    0%{
+    /* Y軸0px */
+    transform: translateY(0);
+    }
+    /* 終了地点 */
+    100%{
+    /* Y軸50px */
+    transform: translateY(8px);
+    }
+}
+
+#div1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+
+#p1{
+    margin-top: -25px;
+    margin-right: 15px;
+}
+#p2{
+    padding-top: 10px;
+}
+
+h2{
+    font-size: 18px;
+    color: rgb(202, 202, 202);
+    padding-left: 8%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#form1{
+    margin-top: -15px;
+}
+#form1 p{
+    text-align: center;
+}
+
+textarea{
+    width: 84%;
+    height: 15vh;
+    padding: 5px;
+    background-color: white;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#in1{
+    background-color: white;
+    width: 84%;
+    height: 40px;
+    padding-left: 5px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+#in2{
+    display: inline-block;
+    padding: 20px 70px;
+    margin: 5px auto 0 auto;
+    text-decoration: none;
+    background-color: rgba(159, 159, 159, 0.5);
+    border-bottom: solid 4px #606777;
+    border-radius: 2rem;
+    font-size: 20px;
+    color: white;
+}
+#in2:hover {
+    transition: all 0.3s ease;
+    background-color: rgba(224, 223, 223, 0.7);
+}
+#in2:active {
+    transform: translateY(4px);
+    border-bottom: none;
+    border-bottom: solid 4px rgba(255, 255, 255, 0);
+    background-color: rgba(224, 223, 223, 0.7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media screen and (max-width:500px) {
+
+
+    img{
+        width: 150px;
+        height: auto;
+    }
+        
+    main{
+        /* margin-top: 2%; */
+    
+    
+    
+    /* h1{
+        padding-top: 4%;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+        color: rgb(202, 202, 202);
+    
+    }
+    
+    p{
+        line-height: 30px;
+    }
+    
+    #mainimage{
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+    
+    }
+    
+    .box{
+        width:180px;
+        height:80px;
+        background-color: rgb(202, 202, 202);
+    
+        border-radius:70%;
+      }
+    
+      .box>P{
+        line-height: 15px;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 20px;
+      
+        
+       
+      }
+    
+    article{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    
+    h2{
+        margin: 10px 0;
+        font-size: 10px;
+        color: rgb(202, 202, 202);
+        font-weight: bold;
+        text-align: left;
+        padding-left: 10%;
+    }
+    
+    
+    textarea{
+        width: 80%;
+        height: 12vh;
+        margin-top: 5px;
+        padding: 5px;
+        margin: 0 10px;
+        background-color: rgb(209, 209, 209);
+        font-size: 12px;
+        text-align: left;
+    
+        
+    }
+    
+    span{
+        color: red;
+        margin-left: 5px;
+    }
+
+    #anser> textarea{
+        width: 80%;
+        height: 7vh;
+        margin-top: 5px;
+        padding: 5px;
+        margin: 0 10px;
+        background-color: rgb(209, 209, 209);
+        font-size: 12px;
+        text-align: left;
+    
+        
+    }
+    
+    
+     
+    #btnlist{
+            
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        color: rgb(70, 255, 70);
+        margin: 20px 0;
+        
+        
+     } */
+
+    

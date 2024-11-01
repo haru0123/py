@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ロビー画面(名前入力)</title>
+    <link rel="stylesheet" href="../static/css/destyle.css">
+    <link rel="stylesheet" href="../static/css/lobby_input.css">
+</head>
+
+<body>
+    <!-- コンテナ -->
+    <div class="container">
+        
+        <!-- 吹き出しを表示する要素 -->
+        <div class="bubble">
+            <p>{{result['bbb']}} : </p>
+            <p>あなたの名前を教えて！</p>
+        </div>
+
+        <!-- 選択されたキャラクターの表示 -->
+        <img id="nukko" src="../static/images/{{session['file']}}" alt="">
+
+        <form action="/lobby_confirm" method="post">
+            <!-- 名前入力テキストボックス -->
+            <input type="text" class="textbox" id="text" name="ccc" placeholder="ここに名前を入力">
+
+            <!-- ボタン -->
+            <input  class="button" type="submit" value="決定">
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>

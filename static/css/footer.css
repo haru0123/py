@@ -1,0 +1,14 @@
+body{
+    max-height: 884px;
+}
+footer input{
+    width: 78px;
+    height: 88px;
+}
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+}

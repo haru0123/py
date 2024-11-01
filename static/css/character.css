@@ -1,0 +1,75 @@
+@media screen and (max-width: 480px) {
+  body main article {
+    text-align: center;
+    padding: 20px 0;
+  }
+  body main article .balloon-1 {
+    padding-top: 50px;
+  }
+  body main article .balloon-1 #comment_img {
+    width: 250px;
+    height: 128px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: -20px;
+  }
+  body main article .balloon-1 #main_img {
+    width: 170px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main article #btnlist {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #46ff46;
+  }
+  body main article #btnlist form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main article #btnlist form .texta {
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    background-color: #d1d1d1;
+    font-size: 15px;
+  }
+  body main article #btnlist form input[type="text"] {
+    color: black;
+  }
+  body main article #btnlist form #decision {
+    display: inline-block;
+    padding: 10px 50px;
+    margin: 30px auto 0 auto;
+    text-decoration: none;
+    background-color: rgba(159, 159, 159, 0.5);
+    border-bottom: solid 4px #606777;
+    border-radius: 2rem;
+    font-size: 20px;
+  }
+  body main article #btnlist form #decision:hover {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: rgba(224, 223, 223, 0.7);
+  }
+  body main article #btnlist form #decision:active {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+    border-bottom: none;
+    border-bottom: solid 4px rgba(255, 255, 255, 0);
+    background-color: rgba(224, 223, 223, 0.7);
+  }
+  #btnlist2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10px;
+    color: aliceblue;
+  }
+}
+/*# sourceMappingURL=character.css.map */

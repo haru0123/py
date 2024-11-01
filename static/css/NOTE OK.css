@@ -1,0 +1,226 @@
+
+body{
+    max-height: 884px;
+}
+
+img{
+    width: 180px;
+    height: auto;
+  
+    
+}
+
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 2rem;
+    color: rgb(202, 202, 202);
+
+}
+
+p{
+    line-height: 40px;
+}
+
+#mainimage{
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: center;
+    gap:30%;
+   
+    
+    
+    
+}
+
+
+
+
+article{
+    text-align: center;
+    
+}
+
+
+
+
+h2{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: rgb(202, 202, 202);
+    font-weight: bold;
+}
+
+
+
+textarea{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgb(209, 209, 209);
+    font-size: 30px;
+    text-align: left;
+    
+}
+
+span{
+    color: red;
+    margin-left: 5px;
+}
+
+#imagebox{
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: center;
+    gap:10%;
+    padding-top: 30px;
+
+}
+
+#image2{
+    padding-top: 180px;
+}
+
+#in{
+    display: inline-block;
+    padding: 10px 70px;
+    margin: 5px auto 0 auto;
+    text-decoration: none;
+    background-color: rgba(159, 159, 159, 0.5);
+    border-bottom: solid 4px #606777;
+    border-radius: 2rem;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+#in:hover {
+    transition: all 0.3s ease;
+    background-color: rgba(224, 223, 223, 0.7);
+}
+#in:active {
+    transform: translateY(4px);
+    border-bottom: none;
+    border-bottom: solid 4px rgba(255, 255, 255, 0);
+    background-color: rgba(224, 223, 223, 0.7);
+}
+
+#in2{
+    /* display: inline-block; */
+    padding: 10px 70px;
+    margin: 5px auto 0 auto;
+    text-decoration: none;
+    /* background-color: rgba(159, 159, 159, 0.5); */
+    /* border-bottom: solid 4px #606777; */
+    /* border-radius: 2rem; */
+    font-size:  17px;
+    color: white;
+}
+/* #in2:hover {
+    transition: all 0.3s ease;
+    background-color: rgba(224, 223, 223, 0.7);
+}
+#in2:active {
+    transform: translateY(4px);
+    border-bottom: none;
+    border-bottom: solid 4px rgba(255, 255, 255, 0);
+    background-color: rgba(224, 223, 223, 0.7);
+} */
+
+
+@media screen and (max-width:480px) {
+   
+    
+    img{
+        width: 100px;
+        height: auto;
+      
+        
+    }
+    
+    
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 120px;
+    line-height: 2rem;
+    color: rgb(202, 202, 202);
+
+}
+    
+    p{
+        line-height: 50px;
+    }
+    
+    #mainimage{
+        display: flex;
+        flex: 0 1 auto;
+        justify-content: center;
+        gap:30%;
+        
+        
+    }
+    
+    article{
+        text-align: center;
+    }
+    
+    
+    
+
+    
+    textarea{
+        width: 80%;
+        height: 45vh;
+        margin: 0 10px;
+        padding: 20px;
+        background-color: rgb(209, 209, 209);
+        font-size: 15px;
+        text-align: left;
+        
+    }
+    
+    span{
+        color: red;
+        margin-left: 5px;
+    }
+    
+    #imagebox{
+        display: flex;
+        flex: 0 1 auto;
+        justify-content: center;
+        gap:10%;
+        padding-bottom: 20px;
+    
+    }
+    
+    #image2{
+        padding-top: 20px;
+    }
+
+    /* 保存ボタンの作成 */
+
+    #anker {
+        text-align: center;
+    }
+    #anker p {
+        font-size: 20px;
+        width: 40%;
+        margin: 0.5rem auto 0 auto;
+        border-radius: 2rem;
+        background-color: rgba(159, 159, 159, 0.5);
+        color: #fff;
+    }
+    #anker p:hover {
+        background-color: rgba(224, 223, 223, 0.7);
+    }
+   
+
+
+}

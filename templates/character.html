@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/css/destyle.css">
+  <link rel="stylesheet" href="../static/css/common.css">
+  <link rel="stylesheet" href="../static/css/character.css">
+
+  <title>キャラクター名前 選択画面</title>
+</head>
+
+<body>
+  <main>
+    <article>
+
+      <!-- 選択されたキャラクターのimageを表示 -->
+      <div class="balloon-1">
+        <img id="comment_img" src="../static/images/name-input.png" alt="コメント">
+        <img id="main_img" src="../static/images/{{result['aaa']}}" alt="メインの画像">
+      </div>      
+
+      <!-- 名前入力フォーム -->
+      <div id="btnlist">
+        <form action="/lobby_input" method="post">
+          <input type="text" class="texta" name="bbb" placeholder="ここに名前を入力">
+          <input type="submit" value="決定" id="decision">
+        </form>
+      </div>
+
+      <!-- 前画面に戻る -->
+      <div id="btnlist2">
+        <form action="/c-select" method="post">
+            
+          <input type="submit" value="キャラ選択へ戻る">
+            
+        </form>
+      </div>
+    </article>
+  </main>
+
+
+
+
+
+</body>
+
+</html>

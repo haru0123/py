@@ -1,0 +1,135 @@
+@charset "UTF-8";
+body {
+  background-image: url("../img/image 23.png");
+  /* 画像のパスを指定 */
+  background-size: cover;
+  /* 背景画像をウィンドウ全体に広げる */
+  background-repeat: no-repeat;
+  /* 背景画像の繰り返しを無効にする */
+  background-position: center;
+  /* 背景画像の位置を中央に配置 */
+  overflow-x: hidden;
+  /* コンテナのスタイル */
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* 要素をフレックスコンテナにする */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* 要素を中央に配置する */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* 要素を中央に配置する */
+  height: 100vh;
+  /* 画面の高さいっぱいにする */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* 要素を縦並びに配置する */
+  /* 吹き出しのスタイル */
+  /* 吹き出しの下向きの三角形部分 */
+}
+
+body .container .bubble {
+  position: relative;
+  /* 相対的な配置を指定 */
+  background-color: white;
+  /* 背景色を設定 */
+  border: 2px solid white;
+  /* 枠線を設定 */
+  border-radius: 10px;
+  /* 枠の角を丸くする */
+  padding: 15px;
+  /* 内側の余白を設定 */
+  width: 300px;
+  /* 幅を指定 */
+  color: black;
+  /* 文字色を白に設定 */
+  text-align: center;
+  max-width: 100%;
+  /* 画像が親要素の幅を超えないようにする */
+  max-height: 100%;
+  /* 画像が親要素の高さを超えないようにする */
+}
+
+body .container .bubble::after {
+  content: "";
+  /* 伪要素の内容を追加 */
+  position: absolute;
+  /* 絶対的な配置を指定 */
+  border-width: 10px 3px 0 10px;
+  /* ボーダーの幅を指定（上辺は0） */
+  border-color: white transparent;
+  /* ボーダーの色を指定 */
+  bottom: -18%;
+  /* 下端から位置を指定 */
+  left: 50%;
+  /* 中央から位置を指定 */
+}
+
+body .container #nukko {
+  width: 200px;
+  margin: 3% 0 0 0;
+  /* 画像のスタイル */
+  max-width: 100%;
+  /* 画像が親要素の幅を超えないようにする */
+  max-height: 100%;
+  /* 画像が親要素の高さを超えないようにする */
+}
+
+body .container form {
+  /* テキストボックスのスタイル */
+  /* ボタンのスタイル */
+  /* ボタンのホバースタイル */
+}
+
+body .container form .textbox {
+  width: 300px;
+  /* 幅を指定 */
+  margin: 3%;
+  padding: 10px;
+  /* 内側の余白を指定 */
+  font-size: 16px;
+  /* フォントサイズを指定 */
+  border: 1px solid #ccc;
+  /* 枠線を指定 */
+  border-radius: 5px;
+  /* 角を丸くする */
+  background-color: lightgray;
+  max-width: 100%;
+  /* 画像が親要素の幅を超えないようにする */
+  max-height: 100%;
+  /* 画像が親要素の高さを超えないようにする */
+}
+
+body .container form .button {
+  padding: 10px 20px;
+  /* 内側の余白を指定 */
+  font-size: 16px;
+  /* フォントサイズを指定 */
+  color: lightgreen;
+  /* テキスト色を指定 */
+  border: none;
+  /* 枠線を無効にする */
+  border-radius: 5px;
+  /* 角を丸くする */
+  font-size: 32px;
+  cursor: pointer;
+  /* カーソルをポインターにする */
+  max-width: 100%;
+  /* 画像が親要素の幅を超えないようにする */
+  max-height: 100%;
+  /* 画像が親要素の高さを超えないようにする */
+}
+
+body .container form .button:hover {
+  background-color: #0056b3;
+  /* ホバー時の背景色を指定 */
+}
+/*# sourceMappingURL=robi-gamenn.css.map */

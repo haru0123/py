@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}title{% endblock %}</title>
+    <link rel="stylesheet" href="../static/css/destyle.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    {% endblock %}
+</head>
+<body>
+    {% block main %}
+      
+    {% endblock %}
+    <footer>
+        <form action="/NOTE" method="get">
+            <input type="image" src="../static/css/images/note.png">
+        </form>
+        <form action="/QUSTION INPUT" method="get">
+            <input type="image" src="../static/css/images/teach.png">
+        </form>
+        <form action="/main" method="get">
+            <input type="image" src="../static/css/images/home.png">
+        </form>
+        <form action="/study" method="get">
+            <input type="image" src="../static/css/images/study.png">
+        </form>
+        <form action="/personal_char" method="get">
+            <input type="image" src="../static/css/images/character.png">
+        </form>
+    </footer>
+</body>
+</html>

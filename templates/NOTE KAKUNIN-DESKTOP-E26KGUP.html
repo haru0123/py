@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/destyle.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/NOTE KAKUNI.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <title>NOTE 詳細画面</title>
+</head>
+<body>
+
+  <main>   
+
+    <div id="mainimage">
+      <h1>NOTE 一覧</h1>
+      <img src="../static/css/images/note%20main.png" alt="メインの画像">
+    </div>
+
+    <article>
+          <article>
+            <div id="genre">
+              <p>数学</p>
+              <form action="/NOTE_detail1" method="get">
+                <input type="submit" value="NOTE" id="anker">
+              </form>
+            </div>
+
+              <div id="genre">
+                <p>英語</p>
+              <form action="/NOTE_detail2" method="get">
+                <input type="submit" value="NOTE" id="anker">
+              </form>
+              </div>
+
+              <div id="genre">
+                <p>社会</p>
+              <form action="/NOTE_detail3" method="get">
+                <input type="submit" value="NOTE" id="anker">
+              </form>
+              </div>
+
+              <div id="genre">
+                <p>IT系</p>
+              <form action="/NOTE_detail4" method="get">
+                <input type="submit" value="NOTE" id="anker">
+              </form>
+              </div>
+
+
+
+<!-- 
+      <form action="/study" method="get">
+        <input type="submit" value="NOTEその2" id="anker">
+      </form>
+
+      <form action="/study" method="get">
+        <input type="submit" value="NOTEその3" id="anker">
+      </form>
+
+      <form action="/study" method="get">
+        <input type="submit" value="NOTEその4" id="anker">
+      </form> -->
+      
+      
+      {% for i in 変数 %}
+        <h2>{s.name}</h2>
+        
+      {% endfor %}
+
+    </article>
+
+      <div id="imagebox">
+        <p><img src="../static/css/images/note%20image01.png" alt="画像"></p>
+        <div id="image2">
+        <p><img src="../static/css/images/note%20image%2002.png" alt="画像2"></p>
+        </div>
+      </div>
+    
+ 
+    
+  </main>
+
+  <footer>
+    <form action="/NOTE" method="get">
+        <input type="image" src="../static/css/images/note.png">
+    </form>
+    <form action="/QUSTION INPUT" method="get">
+        <input type="image" src="../static/css/images/teach.png">
+    </form>
+    <form action="/main" method="get">
+        <input type="image" src="../static/css/images/home.png">
+    </form>
+    <form action="/study" method="get">
+        <input type="image" src="../static/css/images/study.png">
+    </form>
+    <form action="/test" method="get">
+        <input type="image" src="../static/css/images/character.png">
+    </form>
+</footer>
+
+
+    
+</body>
+</html>

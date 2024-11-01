@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+#img1{
+    width: 130px;
+    height: auto;
+    /* アニメーションの名前 */
+    animation-name:UpDown;
+    /* アニメーションの１回分の長さ */
+    animation-duration: 1.5s;
+    /* アニメーションの回数 */
+    animation-iteration-count: infinite;
+    /* アニメーションの進行具合 */
+    animation-timing-function: ease-in-out;
+    /* アニメーション再生の向き */
+    animation-direction: alternate;
+}
+        /* アニメーションの設定 */
+@keyframes UpDown{
+    /* 開始地点 */
+    0%{
+    /* Y軸0px */
+    transform: translateY(0);
+    }
+    /* 終了地点 */
+    100%{
+    /* Y軸50px */
+    transform: translateY(30px);
+    }
+}
+#img2{
+    width: 270px;
+    height: auto;
+}
+#img3{
+    width: 200px;
+    height: auto;
+}
+#img4,
+#img5{
+    width: 35px;
+    height: auto;
+}
+#img6{
+    width: 350px;
+    height: 230px;
+}
+#p1{
+    margin-left: 150px;
+    padding-top: 90px;
+}
+#p2{
+    margin-left: 60px;
+    margin-top: -120px;
+}
+#p3{
+    margin-left: 10px;
+    margin-top: -280px;
+}
+#p4{
+    margin-left: 280px;
+    margin-top: -43.5px;
+}
+#p5{
+    margin-left: 330px;
+    margin-top: -35.5px;
+}
+#p6{
+    text-align: center;
+    padding-top: 230px;
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+.TextTyping {
+    font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  text-align: center;
+  margin: 20px 0;
+  margin-top: -165px;
+  padding: 0 50px;
+  line-height: 2em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+    word-break : break-all;
+
+}
+
+/*========= タイピング ===============*/
+
+.TextTyping span {
+  display: none;
+}
+
+/*文字列後ろの線の設定*/
+.TextTyping::after {
+  content: "|";
+  animation: typinganime .8s ease infinite;
+}
+
+@keyframes typinganime{
+  from{opacity:0}
+  to{opacity:1}
+}

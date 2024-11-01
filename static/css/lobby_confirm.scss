@@ -1,0 +1,156 @@
+@charset "UTF-8";
+body {
+  /* 画像のパスを指定 */
+  background-image: url("images/image\%2023.png");
+  /* 背景画像をウィンドウ全体に広げる */
+  background-size: cover;
+  /* 背景画像の繰り返しを無効にする */
+  background-repeat: no-repeat;
+  /* 背景画像の位置を中央に配置 */
+  background-position: center;
+  /* コンテナのスタイル */
+  overflow-x: hidden;
+}
+
+body .container {
+  /* 要素をフレックスコンテナにする */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* 要素を中央に配置する */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          /* 要素を中央に配置する */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+          /* 画面の高さいっぱいにする */
+  height: 100vh;
+  /* 要素を縦並びに配置する */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* 吹き出しのスタイル */
+  /* 吹き出しの下向きの三角形部分 */
+  /* テキストボックスのスタイル */
+  /* ボタンのスタイル */
+  /* ボタンのホバースタイル */
+}
+
+body .container .bubble {
+  /* 相対的な配置を指定 */
+  position: relative;
+  /* 背景色を設定 */
+  background-color: white;
+  /* 枠線を設定 */
+  border: 2px solid white;
+  /* 枠の角を丸くする */
+  border-radius: 10px;
+  /* 内側の余白を設定 */
+  padding: 15px;
+  /* 幅を指定 */
+  width: 300px;
+  /* 文字色を白に設定 */
+  color: black;
+  text-align: center;
+  /* 画像が親要素の幅を超えないようにする */
+  max-width: 100%;
+  /* 画像が親要素の高さを超えないようにする */
+  max-height: 100%;
+}
+
+body .container .bubble::after {
+  /* 伪要素の内容を追加 */
+  content: "";
+  /* 絶対的な配置を指定 */
+  position: absolute;
+  /* ボーダーの幅を指定（上辺は0） */
+  border-color: white transparent;
+  /* ボーダーの色を指定 */
+  border-width: 10px 3px 0 10px;
+  /* 下端から位置を指定 */
+  bottom: -18%;
+  /* 中央から位置を指定 */
+  left: 50%;
+}
+
+body .container #nukko {
+  width: 200px;
+  /* 画像のスタイル */
+  margin: 3% 0 0 0;
+  /* 画像が親要素の幅を超えないようにする */
+  max-width: 100%;
+  /* 画像が親要素の高さを超えないようにする */
+  max-height: 100%;
+}
+
+#button{
+  display: inline-block;
+  padding: 20px 40px;
+  margin: 1rem auto 0 auto;
+  text-decoration: none;
+  background-color: rgba($color: #9f9f9f, $alpha: 0.5);
+  border-bottom: solid 4px #606777;
+  border-radius: 2rem;
+  font-size: 20px;
+  color: lightgreen;
+  font-weight: bold;
+}
+#button:hover{
+  transition: all 0.3s ease;
+  background-color: rgba($color: #e0dfdf, $alpha: 0.7);
+}
+#button:active{
+  transform: translateY(4px);
+border-bottom: none;
+// margin-bottom: 4px;
+border-bottom: solid 4px rgba(255,255,255,0);
+background-color: rgba($color: #e0dfdf, $alpha: 0.7);
+}
+
+
+// body .container .yoroshiku {
+//   /* 幅を指定 */
+//   width: 300px;
+//   margin: 3%;
+//   /* 内側の余白を指定 */
+//   padding: 15px;
+//   /* フォントサイズを指定 */
+//   font-size: 16px;
+//   /* 角を丸くする */
+//   border-radius: 5px;
+//   background-color: rgba(211, 211, 211, 0.3);
+//   color: white;
+//   text-align: center;
+//   /* 画像が親要素の幅を超えないようにする */
+//   max-width: 100%;
+//   /* 画像が親要素の高さを超えないようにする */
+//   max-height: 100%;
+// }
+
+// body .container .button {
+//   /* 内側の余白を指定 */
+//   padding: 10px 20px;
+//   /* フォントサイズを指定 */
+//   font-size: 32px;
+//   /* テキスト色を指定 */
+//   color: white;
+//   /* 枠線を無効にする */
+//   border: none;
+//   /* 角を丸くする */
+//   border-radius: 5px;
+//   /* カーソルをポインターにする */
+//   cursor: pointer;
+//   /* 画像が親要素の幅を超えないようにする */
+//   max-width: 100%;
+//   /* 画像が親要素の高さを超えないようにする */
+//   max-height: 100%;
+// }
+
+// body .container .button:hover {
+//   background-color: #0056b3;
+//   /* ホバー時の背景色を指定 */
+// }
+/*# sourceMappingURL=lobby_confirm.css.map */

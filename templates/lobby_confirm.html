@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ロビー画面(名前入力後)</title>
+    <link rel="stylesheet" href="../static/css/destyle.css">
+    <link rel="stylesheet" href="../static/css/lobby_confirm.css">
+</head>
+
+<body>
+
+    <!-- コンテナ -->
+    <div class="container">
+        
+        <!-- 吹き出しを表示する要素 -->
+        <div class="bubble">
+            <p>{{result['ccc']}}さん、これからよろしくお願いします！</p>
+        </div>
+
+        <img id="nukko" src="../static/images/{{session['file']}}" alt="">
+
+        <!-- ボタン
+        <button class="yoroshiku">よろしくお願いします！</button> -->
+
+        <!-- ボタン -->
+        <form action="/main" method="get">
+            <input type="submit" value="ホームへ" id="button">
+    </form>
+</body>
+</html>

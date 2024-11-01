@@ -1,0 +1,57 @@
+@charset "UTF-8";
+body .notification {
+  position: fixed;
+  top: 100%;
+  /* 画面の下部に非表示状態で配置 */
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  padding: 3%;
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+  /* topプロパティにトランジションを追加 */
+}
+
+body .notification h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+body .notification .close-btn {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body .notification .content {
+  margin-top: 20px;
+}
+
+body .notification.show {
+  top: 0;
+  /* 表示時に画面の一番上までスライド */
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+  /* topプロパティにトランジションを追加 */
+}
+
+body .notification.show.top {
+  bottom: initial;
+  /* bottomプロパティを初期化 */
+  top: 0;
+  /* topプロパティを使用して画面の一番上までスライド */
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+  /* topプロパティにトランジションを追加 */
+}
+
+body hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+/*# sourceMappingURL=notif.css.map */

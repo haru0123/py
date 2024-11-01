@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>キャラクター選択画面</title>
+    <link rel="stylesheet" href="../static/css/destyle.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/c-select.css">
+</head>
+
+<body>
+    <div id="main">
+
+        <p id="p1"><img src="../static/images/キャラクターを選んでね.png" alt="" id="img1"></p>
+
+        <form action="/character" method="post" enctype="multipart/form-data">
+
+            <!-- キャラクターをここに表示 -->
+            <div id="character">
+                <!-- キャラ１ -->
+                <input type="radio" name="aaa" value="image 27.png" id="1"><label for="1"><img
+                        src="../static/images/image 27.png" alt="" id="img2"></label>
+                <!-- キャラ２ -->
+                <input type="radio" name="aaa" value="neko-removebg-preview.png" id="2"><label for="2"><img
+                        src="../static/images/neko-removebg-preview.png" alt="" id="img3"></label>
+                <!-- キャラ３ -->
+                <input type="radio" name="aaa" value="OIP 1.png" id="3"><label for="3"><img
+                        src="../static/images/OIP 1.png" alt="" id="img4"></label>
+                <!-- <input type="radio" name="chara" id="4"><label for="4"><img src="../static/images/more.png" alt="" id="img5"></label> -->
+            </div>
+
+            <!-- ボタン作成 -->
+            <div id="move">
+                <input type="submit" value="名前入力へ" id="name">
+            </form>
+            <form action="/" method="get">
+                <input type="submit" value="タイトルへ" id="back">
+            </form>
+        </div>
+        </div>
+</body>
+
+</html>

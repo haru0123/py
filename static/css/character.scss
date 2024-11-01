@@ -1,0 +1,165 @@
+@media screen and (max-width:480px) {
+    body{
+        // width: 480px;
+        // height: 544px;
+        main{
+            article {
+                text-align: center;
+                padding: 20px 0;
+                
+                .balloon-1 {
+                    padding-top: 50px;
+                    #comment_img {
+                        width: 250px;
+                        height: 128px;
+                        object-fit: cover;
+                        margin-right: -20px;
+                    }
+                    #main_img{
+                        width: 170px;
+                        height: 250px;
+                        object-fit: cover;
+                    }
+                    // object-fit: cover;
+                    // width: 250px;
+                    // height: 300px;
+                }
+                #btnlist {
+                    font-size: 20px;
+                    text-align: center;
+                    font-weight: bold;
+                    color: rgb(70, 255, 70);
+                    // display: block;
+                    // flex-wrap: wrap;
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .texta {
+                            margin: 10px auto 0 auto;
+                            padding: 10px;
+                            background-color: rgb(209, 209, 209);
+                            font-size: 15px;
+                    }
+            
+                    input[type="text"]{
+                        color: black;
+                    }
+                    
+                    //    padding: 20px 0;
+                    #decision {
+                        display: inline-block;
+                        padding: 10px 50px;
+                        margin: 30px auto 0 auto;
+                        text-decoration: none;
+                        background-color: rgba($color: #9f9f9f, $alpha: 0.5);
+                        border-bottom: solid 4px #606777;
+                        border-radius: 2rem;
+                        font-size: 20px;
+                    }
+                    
+                    #decision:hover {
+                        transition: all 0.3s ease;
+                        background-color: rgba($color: #e0dfdf, $alpha: 0.7);
+                    }
+                    
+                    #decision:active {
+                        transform: translateY(4px);
+                        border-bottom: none;
+                        // margin-bottom: 4px;
+                        border-bottom: solid 4px rgba(255, 255, 255, 0);
+                        background-color: rgba($color: #e0dfdf, $alpha: 0.7);
+                    }
+                    
+                }
+                    
+                }
+            }
+// 
+        }
+    }
+
+    #btnlist2 {
+        text-align: center;
+        margin-top: 20px;
+        // margin: 10px;
+        font-size: 10px;
+        color: aliceblue;
+    }
+}
+
+// @media screen and (max-width:480px) {
+
+//     img{
+//         width: 250px;
+//         height: auto;
+        
+//     }
+    
+    
+//     article{
+//         text-align: center;
+//         padding:20px 0;
+        
+//     }
+
+//     .balloon-1{
+//         padding-top: 50px;
+//     }
+    
+    
+//     .texta{
+//         padding: 10px;
+//         background-color: rgb(209, 209, 209);
+//         font-size: 15px;
+//     }
+    
+    
+//     #btnlist{
+//        font-size: 20px;
+//        text-align: center;
+//        font-weight: bold;
+//        color: rgb(70, 255, 70);
+//        padding: 20px 0;
+//        #decision{
+//         display: inline-block;
+//         padding: 20px 40px;
+//         margin: 10px auto 0 auto;
+//         text-decoration: none;
+//         background-color: rgba($color: #9f9f9f, $alpha: 0.5);
+//         border-bottom: solid 4px #606777;
+//         border-radius: 2rem;
+//         font-size: 20px;
+//     }
+//     #decision:hover{
+//         transition: all 0.3s ease;
+//         background-color: rgba($color: #e0dfdf, $alpha: 0.7);
+//     }
+//     #decision:active{
+//         transform: translateY(4px);
+//     border-bottom: none;
+//     // margin-bottom: 4px;
+//     border-bottom: solid 4px rgba(255,255,255,0);
+//     background-color: rgba($color: #e0dfdf, $alpha: 0.7);
+// }
+   
+       
+//     }
+
+//     #btnlist2{
+//         text-align: center;
+//         padding-left: 50px;
+//         padding-top: 10px;
+//         font-size:15px;
+//         color: aliceblue;
+        
+    
+//     }
+
+
+
+
+// }
+
+
+
